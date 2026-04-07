@@ -29,9 +29,15 @@ export default function Navbar() {
               alt="logo"
               className="w-10 h-10 sm:w-12 sm:h-12 object-contain"
             />
-            <h1 className="text-sm sm:text-lg md:text-xl font-bold text-[#0b1f3a] leading-tight pt-2">
-              Standard Pile Foundation
-            </h1>
+            <div className="pt-1 leading-none">
+              <span className="block text-[9px] sm:text-[10px] font-semibold uppercase tracking-[0.28em] text-blue-700/75">
+                Since 1987
+              </span>
+              <h1 className="mt-1 font-['Manrope'] text-[0.95rem] sm:text-[1.18rem] md:text-[1.38rem] font-extrabold tracking-[-0.04em] text-[#0b1f3a]">
+                <span className="text-[#0b1f3a]">Standard Pile</span>{" "}
+                <span className="text-blue-700">Foundation</span>
+              </h1>
+            </div>
           </div>
 
           {/* DESKTOP NAV */}
@@ -95,12 +101,18 @@ export default function Navbar() {
           open ? "translate-x-0" : "translate-x-full"
         }`}
       >
-        <div className="p-6 flex flex-col h-full">
+          <div className="p-6 flex flex-col h-full">
           {/* HEADER */}
           <div className="flex justify-between items-center mb-8">
-            <h1 className="text-md font-bold text-[#0b1f3a] leading-tight pt-2">
-              Standard Pile Foundation
-            </h1>
+            <div className="leading-none">
+              <span className="block text-[9px] font-semibold uppercase tracking-[0.24em] text-blue-700/75">
+                Since 1987
+              </span>
+              <h1 className="mt-1 font-['Manrope'] text-[1.05rem] font-extrabold tracking-[-0.04em] text-[#0b1f3a]">
+                <span className="text-[#0b1f3a]">Standard Pile</span>{" "}
+                <span className="text-blue-700">Foundation</span>
+              </h1>
+            </div>
             <button onClick={() => setOpen(false)} className="text-gray-600">
               <X size={24} />
             </button>
