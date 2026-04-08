@@ -76,13 +76,22 @@ export default function WhyChoose() {
             </div>
 
             <motion.div whileHover={{ x: 4 }} whileTap={{ scale: 0.98 }}>
-              <Link
-                href="/contact"
-                className="inline-flex items-center gap-2 rounded-full bg-[#0b4db9] px-6 py-3.5 text-base font-semibold text-white shadow-[0_18px_36px_rgba(11,77,185,0.34)] transition hover:bg-[#1d63d8] sm:gap-3 sm:px-9 sm:py-5 sm:text-xl"
-              >
-                Discuss Your Project
-                <ArrowRight className="h-5 w-5 sm:h-6 sm:w-6" />
-              </Link>
+              <div className="flex flex-wrap gap-4">
+                <Link
+                  href="/contact"
+                  className="inline-flex items-center gap-2 rounded-full bg-[#0b4db9] px-6 py-3.5 text-base font-semibold text-white shadow-[0_18px_36px_rgba(11,77,185,0.34)] transition hover:bg-[#1d63d8] sm:gap-3 sm:px-9 sm:py-5 sm:text-xl"
+                >
+                  Discuss Your Project
+                  <ArrowRight className="h-5 w-5 sm:h-6 sm:w-6" />
+                </Link>
+
+                <Link
+                  href="/about#about-why-choose"
+                  className="inline-flex items-center rounded-full border border-white/[0.12] px-6 py-3.5 text-sm font-semibold text-white transition hover:bg-white/[0.08] sm:px-8 sm:py-5 sm:text-base"
+                >
+                  Why Choose Us
+                </Link>
+              </div>
             </motion.div>
           </motion.div>
 

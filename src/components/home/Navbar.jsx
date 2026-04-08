@@ -3,19 +3,36 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
-import { Menu, X } from "lucide-react";
+import { ChevronDown, Menu, X } from "lucide-react";
 
 export default function Navbar() {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
+  const [aboutOpen, setAboutOpen] = useState(false);
+  const [mobileAboutOpen, setMobileAboutOpen] = useState(false);
 
   const navLinks = [
     { name: "Home", href: "/" },
-    { name: "About", href: "/#" },
+    { name: "About", href: "/about" },
     { name: "Services", href: "/services" },
     { name: "Projects", href: "/projects" },
     { name: "Contact", href: "/contact" },
   ];
+
+  const aboutLinks = [
+    {
+      name: "Our Story",
+      href: "/about#about-story",
+      description: "Legacy, people, and company background",
+    },
+    {
+      name: "What We Do",
+      href: "/about#about-capabilities",
+      description: "Services, methods, and technical capabilities",
+    },
+  ];
+
+  const isAboutActive = pathname === "/about";
 
   return (
     <>
@@ -44,6 +61,61 @@ export default function Navbar() {
           <div className="hidden md:flex items-center gap-8 text-[14px] font-semibold">
             {navLinks.map((link) => {
               const isActive = pathname === link.href;
+
+              if (link.name === "About") {
+                return (
+                  <div
+                    key={link.name}
+                    className="relative"
+                    onMouseEnter={() => setAboutOpen(true)}
+                    onMouseLeave={() => setAboutOpen(false)}
+                  >
+                    <Link
+                      href={link.href}
+                      className={`relative inline-flex items-center gap-1 transition-all duration-300 ${
+                        isAboutActive
+                          ? "text-blue-700"
+                          : "text-slate-600 hover:text-blue-900"
+                      }`}
+                    >
+                      {link.name}
+                      <ChevronDown
+                        className={`h-4 w-4 transition-transform duration-300 ${
+                          aboutOpen ? "rotate-180" : ""
+                        }`}
+                      />
+
+                      {isAboutActive && (
+                        <span className="absolute left-0 -bottom-2 h-[2px] w-full rounded-full bg-blue-700"></span>
+                      )}
+                    </Link>
+
+                    <div
+                      className={`absolute left-1/2 top-full z-50 mt-4 w-[300px] -translate-x-1/2 rounded-[22px] border border-slate-200 bg-white p-3 shadow-[0_24px_60px_rgba(15,23,42,0.14)] transition-all duration-200 ${
+                        aboutOpen
+                          ? "visible translate-y-0 opacity-100"
+                          : "invisible -translate-y-2 opacity-0"
+                      }`}
+                    >
+                      {aboutLinks.map((item) => (
+                        <Link
+                          key={item.name}
+                          href={item.href}
+                          className="block rounded-[18px] px-4 py-3 transition hover:bg-[#f4f7fb]"
+                        >
+                          <p className="text-sm font-bold text-[#0b1f3a]">
+                            {item.name}
+                          </p>
+                          <p className="mt-1 text-xs leading-5 text-slate-500">
+                            {item.description}
+                          </p>
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                );
+              }
+
               return (
                 <Link
                   key={link.name}
@@ -121,7 +193,55 @@ export default function Navbar() {
           {/* LINKS */}
           <div className="flex flex-col gap-6">
             {navLinks.map((link) => {
-             const isActive = pathname === link.href;
+              const isActive = pathname === link.href;
+
+              if (link.name === "About") {
+                return (
+                  <div key={link.name} className="space-y-4">
+                    <button
+                      type="button"
+                      onClick={() => setMobileAboutOpen((prev) => !prev)}
+                      className={`flex w-full items-center justify-between text-left text-lg font-medium ${
+                        isAboutActive ? "text-blue-700" : "text-slate-700"
+                      }`}
+                    >
+                      <span>{link.name}</span>
+                      <ChevronDown
+                        className={`h-5 w-5 text-slate-400 transition-transform duration-300 ${
+                          mobileAboutOpen ? "rotate-180" : ""
+                        }`}
+                      />
+                    </button>
+
+                    <div
+                      className={`overflow-hidden rounded-[20px] bg-[#f4f7fb] transition-all duration-300 ${
+                        mobileAboutOpen
+                          ? "max-h-60 p-3 opacity-100"
+                          : "max-h-0 px-3 opacity-0"
+                      }`}
+                    >
+                      {aboutLinks.map((item) => (
+                        <Link
+                          key={item.name}
+                          href={item.href}
+                          onClick={() => {
+                            setMobileAboutOpen(false);
+                            setOpen(false);
+                          }}
+                          className="block rounded-[16px] px-4 py-3 transition hover:bg-white"
+                        >
+                          <p className="text-sm font-bold text-[#0b1f3a]">
+                            {item.name}
+                          </p>
+                          <p className="mt-1 text-xs leading-5 text-slate-500">
+                            {item.description}
+                          </p>
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                );
+              }
 
               return (
                 <Link

@@ -110,14 +110,14 @@ export default function Hero() {
         <div className="space-y-6">
 
           {/* TEXT BLOCK FIXED HEIGHT */}
-          <div className="flex min-h-[260px] max-w-[640px] flex-col justify-center md:min-h-[300px]">
+          <div className="flex min-h-[260px] max-w-[640px] flex-col justify-center md:min-h-[300px] md:max-w-[720px]">
 
             {/* TITLE */}
             <motion.h1
               initial={false}
               animate={{ opacity: 1 }}
               transition={{ duration: 1 }}
-              className="max-w-[10ch] text-[46px] font-bold leading-[1.08] tracking-tight bg-gradient-to-r from-white to-blue-300 bg-clip-text text-transparent sm:text-[56px] md:text-[74px]"
+              className="max-w-[10ch] text-[46px] font-bold leading-[1.08] tracking-tight bg-gradient-to-r from-white to-blue-300 bg-clip-text text-transparent sm:max-w-[11ch] sm:text-[56px] md:max-w-[14ch] md:text-[74px]"
             >
               {slides[index].title}
             </motion.h1>
