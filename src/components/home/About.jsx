@@ -100,11 +100,26 @@
 // }
 "use client";
 
+import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { motion } from "framer-motion";
 
 export default function About() {
+  const router = useRouter();
+
   return (
-    <section className="relative py-20 bg-[#0b1f3a] overflow-hidden">
+    <section
+      className="relative cursor-pointer overflow-hidden bg-[#0b1f3a] py-20"
+      onClick={() => router.push("/about#about-capabilities")}
+      onKeyDown={(event) => {
+        if (event.key === "Enter" || event.key === " ") {
+          event.preventDefault();
+          router.push("/about#about-capabilities");
+        }
+      }}
+      role="link"
+      tabIndex={0}
+    >
 
       {/* BACKGROUND GLOW (BLUE THEME) */}
       <div className="absolute top-0 left-0 w-72 h-72 bg-blue-500/20 blur-[120px]"></div>
@@ -199,6 +214,15 @@ export default function About() {
               </p>
             </motion.div>
           ))}
+        </div>
+
+        <div className="mt-12 flex justify-center">
+          <Link
+            href="/about"
+            className="inline-flex items-center rounded-full border border-blue-300/20 bg-white/[0.08] px-7 py-3.5 text-sm font-semibold text-white transition hover:bg-white/[0.12] sm:text-base"
+          >
+            View Company Profile
+          </Link>
         </div>
 
       </div>

@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { motion } from "framer-motion";
 import { BadgeCheck, Headset, MapPin, Users } from "lucide-react";
 
@@ -131,6 +132,15 @@ export default function AboutUs() {
                 </div>
               );
             })}
+          </div>
+
+          <div className="pt-2">
+            <Link
+              href="/about#about-hero"
+              className="inline-flex items-center rounded-full bg-[#0b4db9] px-6 py-3 text-sm font-semibold text-white shadow-[0_18px_36px_rgba(11,77,185,0.24)] transition hover:bg-[#1d63d8] sm:text-base"
+            >
+              Learn More About Us
+            </Link>
           </div>
         </motion.div>
       </div>
