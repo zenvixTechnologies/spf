@@ -197,7 +197,7 @@ export default function Navbar() {
 
               if (link.name === "About") {
                 return (
-                  <div key={link.name} className="space-y-4">
+                  <div key={link.name}>
                     <button
                       type="button"
                       onClick={() => setMobileAboutOpen((prev) => !prev)}
@@ -216,8 +216,8 @@ export default function Navbar() {
                     <div
                       className={`overflow-hidden rounded-[20px] bg-[#f4f7fb] transition-all duration-300 ${
                         mobileAboutOpen
-                          ? "max-h-60 p-3 opacity-100"
-                          : "max-h-0 px-3 opacity-0"
+                          ? "mt-4 max-h-60 p-3 opacity-100"
+                          : "mt-0 max-h-0 px-3 opacity-0"
                       }`}
                     >
                       {aboutLinks.map((item) => (
