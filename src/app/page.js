@@ -9,7 +9,7 @@ import WhyChoose from "@/components/home/WhyChoose";
 
 export default function Home() {
   return (
-    <>
+    <> 
       <Navbar />
       <Hero />
       <AboutUs/>

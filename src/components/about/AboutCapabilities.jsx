@@ -24,7 +24,7 @@ const services = [
     description:
       "Execution across hydraulic rotary, DMC, under-reamed, compaction, granular, and sand pile methods.",
     image:
-      "https://images.unsplash.com/photo-1517581177682-a085bb7ffb15?auto=format&fit=crop&w=1200&q=80",
+      "/pilling.png",
     icon: Drill,
   },
   {
@@ -32,7 +32,7 @@ const services = [
     description:
       "Verification services focused on strength, stability, and long-term foundation reliability.",
     image:
-      "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1200&q=80",
+      "/loadtest.png",
     icon: CircleGauge,
   },
 ];
