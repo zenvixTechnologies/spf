@@ -44,7 +44,7 @@ const projects = [
     title: "Arcadia Hotel",
     location: "Idinjillam",
     image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuB8wm6M1RH88mSvH4a3JrdaZUc5Bu2UOOsgzGvxMmga_vMHssL3c9OzcUrKtSAwDwSn2VASyDyz4fKskPSzrxOOBo6BsK6oT04d7krZaXA9J_qyEQdnfe6cMxBAazTTEbRDb3XtW2vEQvw_-nOxazxcQjhiB6D071jAfsfHM8koKDD3qFirLbzRLM8gnZe3Qu7kRXTEhg9iuhlsQHpK0x3cj6LUo3cxSm-8QIVcKqgs-PZjD77R9fd1kxOhhNoEa9rc-zIZ6qPWq2ff",
+      "/Arcadia Hotel.png",
   },
 ];
 
