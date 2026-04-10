@@ -9,36 +9,35 @@ const projects = [
     category: "Residential",
     title: "Chandy's Tall County",
     location: "Kottayam",
-    image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuCKKeVapBdz-ehL2bvr8IHqBr-cvx6PHBIVEUJ1rSWRaN1sWE-PIJxOGM9NzgSecYpwu3N-3knnYQcyyMQr_z-D7qrCHXM0DEnOB1FqzRqf9xQYwD7SbqrrRotV8BMt72ppyAXJPMiws8p2CBonio7ddohI1TqZUc2CqaKOxzOuUe9RG6xXD5VadMFW95f0S30_dGcUecV38VX7S5BpRoSYIZCIw4MYcrww1ZSXNdtbGXghwcf9PBfFMxhhtLb_0DIMhRmCpzRp1U3G",
+    image: "/Chandys County Kottayam.png",
   },
   {
     category: "Educational",
     title: "Brilliant Study Centre",
     location: "Pala",
     image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuB1A_4EcYwfaXQT6fohys6TsiQksElEQ2-OoQF6Tc-hwaMqtZaMZqBNikoL_045elZpM7aF2PwdxTbEcL4N4_uk6dBLuWzigeyvsMxwFtE-8d0IyTSVvNNPPKSsw3Yw_3dk2B3i3NXBExV-v5zyZNjBcbxd2a5BqUIkk3pguSVTnoAdtfr2z2tRWJEnuMz2_keklkYBMFhKn7AashWBFbpzUe6IjqhbkbRogTuYhoLPO1spVEZL3KTMsoiJ_pJxRqLR2O83rRkS3NjN",
+      "/Brilliant Study Centre Pala.png",
   },
   {
     category: "Educational",
     title: "Darsana Academy",
     location: "Nagampadam",
     image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuBGVD866UMzASIj0GamzhqcbUGXIiiHumCBIG6bJjXR8X8iOiJuMtqGCI1uBLR-JVsrTSd1_BbkczOQ3RF4wzWu6uomqO9VLkDBWU4qbfm9DoPOMKaRCCnALq6tpuP4fUp8gBQnqAYqNe-JuEQSXbkLkMS_KKNldjtPNJStxkqwoGysGxr2AALDmznSnrKgayYB2eOCzEeJPzk97VbxCvMhW9lxK3-S7dX17A8qPNEPID0FD4LY__6u-Lp9qZtWVazF9BBCFqLtPzHk",
+      "/Darsana Academy Nagampadam.avif",
   },
   {
     category: "Hospitality",
     title: "Lake Palace Resort",
     location: "Alleppey",
     image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuAhNhYzfzc99utZDihH3Ix4XNQRQJksN69I36w0MyP53RhOSyLNL2wwqfMixFsZXluNfbRrwgzdarmBWPinoAu4bZ155s4Yw-vo5ayPAOr2YRg1cYN6ewz2d4QpD9O0zLLEy57y1nLd3INkCv1zPqlqMgBOA_Ozlgg0WfG7ZIqgy6ywfYZQxwaoJmD-wXlamGXZupYTmPQpMR_UrE1CpxOrucF5bAX3YzmPWdd7KUh90AkAnxvbIdltVU5EQLumdYfyhKL_FT7nZ_E0",
+      "/Lake Palace Resort.png",
   },
   {
     category: "Residential",
     title: "AVS Serene City",
     location: "Thiruvalla",
     image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuA6wXYIHhPpOBNcUtcuCHG9-9D-_p2hG7QGw0xf0j4HsLCTJJN-d_HHaymV_4J3_WFpm9Ke4MhmXCXZZSWNzKFEtMkXmUc5eTfgShNkNZ3Y5zXb2Z37NVJ-OVTwwbADqcoixrf3-R55EgC6E42bRZGaBHo7_8aVTAXcpM5ZXY6X6rfzTN2y03uOmXn2cdjBSQ57NFXJoMHSc48g5hiVpY-jT1RKmaIB7k73MvHlV9vga6pAy-GFMrZt8eJoO-WEET09LEHLCqk9Ik6L",
+      "/AVS Serene City.png",
   },
   {
     category: "Commercial",
