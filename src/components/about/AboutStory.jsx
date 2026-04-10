@@ -72,7 +72,7 @@ export default function AboutStory() {
             </span>
 
             <h2 className="font-['Manrope'] text-[2.2rem] font-extrabold leading-[1.02] tracking-[-0.05em] text-[#0f172a] sm:text-[2.8rem] md:text-[3.7rem]">
-              A family-run company shaped by field knowledge and trust.
+              A family-run firm shaped by field knowledge and trust.
             </h2>
           </div>
 

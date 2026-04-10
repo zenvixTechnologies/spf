@@ -40,7 +40,11 @@ export default function Navbar() {
         {/* NAV CONTAINER */}
         <div className="max-w-7xl mx-auto px-4 sm:px-6 h-20 flex items-center justify-between">
           {/* LOGO */}
-          <div className="flex items-center gap-2 sm:gap-3">
+          <Link
+            href="/"
+            className="flex items-center gap-2 sm:gap-3"
+            aria-label="Go to home page"
+          >
             <img
               src="/spf.png"
               alt="logo"
@@ -55,7 +59,7 @@ export default function Navbar() {
                 <span className="text-blue-700">Foundation</span>
               </h1>
             </div>
-          </div>
+          </Link>
 
           {/* DESKTOP NAV */}
           <div className="hidden md:flex items-center gap-8 text-[14px] font-semibold">
