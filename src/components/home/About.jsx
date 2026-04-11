@@ -57,7 +57,7 @@ export default function About() {
             },
             {
               title: "Soil Investigation",
-              img: "https://images.unsplash.com/photo-1513828583688-c52646db42da?auto=format&fit=crop&w=1200&q=80",
+              img: "/soil-investigation.jpg",
             },
             {
               title: "Load Testing",

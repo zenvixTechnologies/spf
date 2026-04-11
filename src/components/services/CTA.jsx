@@ -26,9 +26,13 @@ export default function CTA() {
                 Inquire Now
               </Link>
 
-              <button className="bg-white border border-gray-300 text-[#0b1f3a] px-8 py-3 rounded-xl font-semibold hover:bg-gray-50 transition">
+              <a
+                href="/SPF.pdf"
+                download="SPF.pdf"
+                className="bg-white border border-gray-300 text-[#0b1f3a] px-8 py-3 rounded-xl font-semibold hover:bg-gray-50 transition"
+              >
                 Download Brochure
-              </button>
+              </a>
             </div>
           </div>
 

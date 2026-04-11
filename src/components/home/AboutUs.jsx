@@ -40,7 +40,7 @@ export default function AboutUs() {
           transition={{ duration: 0.7 }}
           className="relative pb-20 sm:pb-24 lg:pb-12"
         >
-          <div className="absolute left-3 top-3 z-20 rounded-[18px] bg-[#0b4db9] px-4 py-4 text-white shadow-[0_22px_50px_rgba(11,77,185,0.28)] sm:left-5 sm:top-0 sm:rounded-[22px] sm:px-7 sm:py-8">
+          <div className="absolute left-2 top-2 z-20 rounded-[18px] bg-[#0b4db9] px-4 py-4 text-white shadow-[0_22px_50px_rgba(11,77,185,0.28)] sm:left-1 sm:-top-6 sm:rounded-[22px] sm:px-7 sm:py-8">
             <p className="text-3xl font-extrabold leading-none sm:text-5xl">35+</p>
             <p className="mt-2 text-sm font-medium leading-snug sm:mt-3 sm:text-[1.05rem]">
               Years of
@@ -51,17 +51,17 @@ export default function AboutUs() {
 
           <div className="relative ml-0 overflow-hidden rounded-[24px] shadow-[0_28px_70px_rgba(15,23,42,0.14)] sm:ml-8 sm:rounded-[26px] lg:ml-10">
             <img
-              src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1200&q=80"
+              src="/family.jpg"
               alt="Standard Pile Foundation team at site"
-              className="h-[360px] w-full object-cover sm:h-[460px] lg:h-[540px]"
+              className="h-[360px] w-full object-fill sm:h-[460px] lg:h-[540px]"
             />
           </div>
 
           <div className="absolute -bottom-2 right-3 overflow-hidden rounded-[16px] border-[3px] border-white bg-white shadow-[0_24px_60px_rgba(15,23,42,0.2)] sm:-bottom-8 sm:right-0 sm:rounded-[18px] sm:border-4">
             <img
-              src="https://images.unsplash.com/photo-1513828583688-c52646db42da?auto=format&fit=crop&w=800&q=80"
+              src="/family1.jpg"
               alt="Pile foundation equipment"
-              className="h-[140px] w-[180px] object-cover min-[420px]:h-[160px] min-[420px]:w-[220px] sm:h-[210px] sm:w-[280px] md:h-[250px] md:w-[340px]"
+              className="h-[140px] w-[180px] object-center min-[420px]:h-[160px] min-[420px]:w-[220px] sm:h-[210px] sm:w-[280px] md:h-[250px] md:w-[340px]"
             />
           </div>
         </motion.div>
