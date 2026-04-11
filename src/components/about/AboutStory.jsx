@@ -42,7 +42,7 @@ export default function AboutStory() {
 
           <div className="relative overflow-hidden rounded-[30px] bg-white p-3 shadow-[0_24px_70px_rgba(15,23,42,0.08)]">
             <img
-              src="https://images.unsplash.com/photo-1513828583688-c52646db42da?auto=format&fit=crop&w=1400&q=80"
+              src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1400&q=80"
               alt="Soil investigation work in progress"
               className="h-[320px] w-full rounded-[24px] object-cover sm:h-[400px] lg:h-[500px]"
             />

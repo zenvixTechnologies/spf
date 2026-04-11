@@ -16,7 +16,7 @@ const services = [
     description:
       "Detailed sub-soil testing and reporting to support safer structural decisions.",
     image:
-      "https://images.unsplash.com/photo-1513828583688-c52646db42da?auto=format&fit=crop&w=1200&q=80",
+      "/soil-investigation.jpg",
     icon: FlaskConical,
   },
   {

@@ -1,4 +1,5 @@
 import "./globals.css";
+import AppLoader from "@/components/AppLoader";
 
 export const metadata = {
   title: "Standard Pile Foundation",
@@ -17,7 +18,9 @@ export default function RootLayout({ children }) {
           rel="stylesheet"
         />
       </head>
-      <body className="bg-surface text-on-surface font-body">{children}</body>
+      <body className="bg-surface text-on-surface font-body">
+        <AppLoader>{children}</AppLoader>
+      </body>
     </html>
   );
 }

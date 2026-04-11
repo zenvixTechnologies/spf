@@ -99,9 +99,9 @@ export default function AboutHero() {
 
           <div className="relative overflow-hidden rounded-[30px] border border-white/10 bg-white/5 p-3 shadow-[0_30px_80px_rgba(8,22,44,0.42)] backdrop-blur">
             <img
-              src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1400&q=80"
+              src="/family.jpg"
               alt="Foundation team and equipment on site"
-              className="h-[320px] w-full rounded-[24px] object-cover sm:h-[420px] lg:h-[520px]"
+              className="h-[320px] w-full rounded-[24px]  sm:h-[420px] lg:h-[520px]"
             />
 
             <div className="absolute bottom-6 left-6 right-6 rounded-[24px] border border-white/10 bg-[#071324]/82 p-5 text-white backdrop-blur-md sm:p-6">
