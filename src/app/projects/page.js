@@ -4,6 +4,15 @@ import ProjectsCTA from "@/components/projects/ProjectsCTA";
 import ProjectsGrid from "@/components/projects/ProjectsGrid";
 import ProjectsHero from "@/components/projects/ProjectsHero";
 
+export const metadata = {
+  title: "Projects",
+  description:
+    "View foundation engineering and piling projects completed by Standard Pile Foundation across Kerala, including residential, hospitality, educational, and commercial developments.",
+  alternates: {
+    canonical: "/projects",
+  },
+};
+
 export default function ProjectsPage() {
   return (
     <>

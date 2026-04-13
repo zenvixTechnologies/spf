@@ -6,6 +6,15 @@ import WhatsAppButton from "@/components/contact/WhatsappButton";
 import Footer from "@/components/home/Footer";
 import Navbar from "@/components/home/Navbar";
 
+export const metadata = {
+  title: "Contact",
+  description:
+    "Contact Standard Pile Foundation in Edathua, Alappuzha, Kerala for soil investigation, pile foundation work, load testing, and geotechnical engineering support.",
+  alternates: {
+    canonical: "/contact",
+  },
+};
+
 export default function ContactPage() {
   return (
     <>
