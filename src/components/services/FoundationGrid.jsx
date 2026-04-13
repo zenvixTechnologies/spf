@@ -107,6 +107,7 @@ export default function FoundationGrid() {
                   <img
                     src={method.image}
                     alt={method.title}
+                    loading="lazy"
                     className="h-[270px] w-full object-cover"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#08172d]/85 via-[#08172d]/20 to-transparent" />
@@ -184,6 +185,7 @@ export default function FoundationGrid() {
                   <img
                     src={method.image}
                     alt={method.title}
+                    loading="lazy"
                     className="h-44 w-full object-cover"
                   />
                   <div className="p-5">

@@ -109,6 +109,7 @@ export default function AboutCapabilities() {
                 <img
                   src={service.image}
                   alt={service.title}
+                  loading="lazy"
                   className="h-[250px] w-full object-cover"
                 />
                 <div className="space-y-4 p-6">

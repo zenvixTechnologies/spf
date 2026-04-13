@@ -83,6 +83,7 @@ export default function SoilSection() {
                   <img
                     src={service.image}
                     alt={service.title}
+                    loading="lazy"
                     className="h-[250px] w-full object-cover"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#0b1f3a]/80 via-[#0b1f3a]/20 to-transparent" />

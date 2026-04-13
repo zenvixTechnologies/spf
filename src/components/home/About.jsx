@@ -75,6 +75,7 @@ export default function About() {
               {/* IMAGE */}
               <img
                 src={item.img}
+                loading="lazy"
                 className="w-full h-[280px] object-cover group-hover:scale-110 transition duration-700"
                 alt={item.title}
               />

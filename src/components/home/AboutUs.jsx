@@ -53,7 +53,8 @@ export default function AboutUs() {
             <img
               src="/family.jpg"
               alt="Standard Pile Foundation team at site"
-              className="h-[360px] w-full object-fill sm:h-[460px] lg:h-[540px]"
+              loading="lazy"
+              className="h-[360px] w-full bg-[#e9eef5] object-contain sm:h-[460px] lg:h-[540px]"
             />
           </div>
 
@@ -61,7 +62,8 @@ export default function AboutUs() {
             <img
               src="/family1.jpg"
               alt="Pile foundation equipment"
-              className="h-[140px] w-[180px] object-center min-[420px]:h-[160px] min-[420px]:w-[220px] sm:h-[210px] sm:w-[280px] md:h-[250px] md:w-[340px]"
+              loading="lazy"
+              className="h-[140px] w-[180px] bg-[#eef3f8] object-contain min-[420px]:h-[160px] min-[420px]:w-[220px] sm:h-[210px] sm:w-[280px] md:h-[250px] md:w-[340px]"
             />
           </div>
         </motion.div>

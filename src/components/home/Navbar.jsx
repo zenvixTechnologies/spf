@@ -10,6 +10,8 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
   const [aboutOpen, setAboutOpen] = useState(false);
   const [mobileAboutOpen, setMobileAboutOpen] = useState(false);
+  const [projectsOpen, setProjectsOpen] = useState(false);
+  const [mobileProjectsOpen, setMobileProjectsOpen] = useState(false);
 
   const navLinks = [
     { name: "Home", href: "/" },
@@ -32,7 +34,26 @@ export default function Navbar() {
     },
   ];
 
+  const projectLinks = [
+    {
+      name: "Churches under Changanacherry",
+      href: "/projects#churches-under-changanacherry-diocese",
+      description: "Churches under the Changanacherry Diocese",
+    },
+    {
+      name: "Other Churches",
+      href: "/projects#other-churches",
+      description: "Additional church projects outside the diocese",
+    },
+    {
+      name: "Buildings",
+      href: "/projects#buildings",
+      description: "Building and hospitality project portfolio",
+    },
+  ];
+
   const isAboutActive = pathname === "/about";
+  const isProjectsActive = pathname === "/projects";
 
   return (
     <>
@@ -102,6 +123,60 @@ export default function Navbar() {
                       }`}
                     >
                       {aboutLinks.map((item) => (
+                        <Link
+                          key={item.name}
+                          href={item.href}
+                          className="block rounded-[18px] px-4 py-3 transition hover:bg-[#f4f7fb]"
+                        >
+                          <p className="text-sm font-bold text-[#0b1f3a]">
+                            {item.name}
+                          </p>
+                          <p className="mt-1 text-xs leading-5 text-slate-500">
+                            {item.description}
+                          </p>
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                );
+              }
+
+              if (link.name === "Projects") {
+                return (
+                  <div
+                    key={link.name}
+                    className="relative"
+                    onMouseEnter={() => setProjectsOpen(true)}
+                    onMouseLeave={() => setProjectsOpen(false)}
+                  >
+                    <Link
+                      href={link.href}
+                      className={`relative inline-flex items-center gap-1 transition-all duration-300 ${
+                        isProjectsActive
+                          ? "text-blue-700"
+                          : "text-slate-600 hover:text-blue-900"
+                      }`}
+                    >
+                      {link.name}
+                      <ChevronDown
+                        className={`h-4 w-4 transition-transform duration-300 ${
+                          projectsOpen ? "rotate-180" : ""
+                        }`}
+                      />
+
+                      {isProjectsActive && (
+                        <span className="absolute left-0 -bottom-2 h-[2px] w-full rounded-full bg-blue-700"></span>
+                      )}
+                    </Link>
+
+                    <div
+                      className={`absolute left-1/2 top-full z-50 mt-4 w-[320px] -translate-x-1/2 rounded-[22px] border border-slate-200 bg-white p-3 shadow-[0_24px_60px_rgba(15,23,42,0.14)] transition-all duration-200 ${
+                        projectsOpen
+                          ? "visible translate-y-0 opacity-100"
+                          : "invisible -translate-y-2 opacity-0"
+                      }`}
+                    >
+                      {projectLinks.map((item) => (
                         <Link
                           key={item.name}
                           href={item.href}
@@ -230,6 +305,54 @@ export default function Navbar() {
                           href={item.href}
                           onClick={() => {
                             setMobileAboutOpen(false);
+                            setOpen(false);
+                          }}
+                          className="block rounded-[16px] px-4 py-3 transition hover:bg-white"
+                        >
+                          <p className="text-sm font-bold text-[#0b1f3a]">
+                            {item.name}
+                          </p>
+                          <p className="mt-1 text-xs leading-5 text-slate-500">
+                            {item.description}
+                          </p>
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                );
+              }
+
+              if (link.name === "Projects") {
+                return (
+                  <div key={link.name}>
+                    <button
+                      type="button"
+                      onClick={() => setMobileProjectsOpen((prev) => !prev)}
+                      className={`flex w-full items-center justify-between text-left text-lg font-medium ${
+                        isProjectsActive ? "text-blue-700" : "text-slate-700"
+                      }`}
+                    >
+                      <span>{link.name}</span>
+                      <ChevronDown
+                        className={`h-5 w-5 text-slate-400 transition-transform duration-300 ${
+                          mobileProjectsOpen ? "rotate-180" : ""
+                        }`}
+                      />
+                    </button>
+
+                    <div
+                      className={`overflow-hidden rounded-[20px] bg-[#f4f7fb] transition-all duration-300 ${
+                        mobileProjectsOpen
+                          ? "mt-4 max-h-60 p-3 opacity-100"
+                          : "mt-0 max-h-0 px-3 opacity-0"
+                      }`}
+                    >
+                      {projectLinks.map((item) => (
+                        <Link
+                          key={item.name}
+                          href={item.href}
+                          onClick={() => {
+                            setMobileProjectsOpen(false);
                             setOpen(false);
                           }}
                           className="block rounded-[16px] px-4 py-3 transition hover:bg-white"

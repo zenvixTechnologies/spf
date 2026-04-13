@@ -24,6 +24,7 @@ export default function Loader({ done }) {
       >
         <img
           src="/spf.png"
+          loading="lazy"
           className="h-16 w-16 object-contain sm:h-20 sm:w-20"
           alt="logo"
         />

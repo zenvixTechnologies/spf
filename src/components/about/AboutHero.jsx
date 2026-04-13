@@ -16,6 +16,21 @@ const badges = [
   { icon: MapPin, text: "Edathua, Alleppey based" },
 ];
 
+const galleryImages = [
+  {
+    src: "/about1.jpeg",
+    alt: "Ceremonial inauguration at Standard Pile Foundation office",
+  },
+  {
+    src: "/about2.jpeg",
+    alt: "Lamp lighting ceremony during a company gathering",
+  },
+  {
+    src: "/about3.jpeg",
+    alt: "Blessing ceremony with the Standard Pile Foundation team",
+  },
+];
+
 export default function AboutHero() {
   return (
     <section
@@ -98,20 +113,43 @@ export default function AboutHero() {
           <div className="absolute -bottom-6 right-8 h-28 w-28 rounded-full bg-blue-500/25 blur-3xl" />
 
           <div className="relative overflow-hidden rounded-[30px] border border-white/10 bg-white/5 p-3 shadow-[0_30px_80px_rgba(8,22,44,0.42)] backdrop-blur">
-            <img
-              src="/family.jpg"
-              alt="Foundation team and equipment on site"
-              className="h-[320px] w-full rounded-[24px]  sm:h-[420px] lg:h-[520px]"
-            />
+            <div className="grid gap-3 lg:grid-cols-[1.08fr_0.92fr]">
+              <div className="relative overflow-hidden rounded-[24px]">
+                <img
+                  src="/about1.jpeg"
+                  alt="Ceremonial inauguration at Standard Pile Foundation office"
+                  loading="lazy"
+                  className="h-[320px] w-full object-contain bg-[#dfe8ea] sm:h-[420px] lg:h-[520px]"
+                />
 
-            <div className="absolute bottom-6 left-6 right-6 rounded-[24px] border border-white/10 bg-[#071324]/82 p-5 text-white backdrop-blur-md sm:p-6">
-              <p className="text-xs font-semibold uppercase tracking-[0.26em] text-blue-200">
-                Foundation legacy
-              </p>
-              <p className="mt-3 text-sm leading-7 text-slate-200 sm:text-base">
-                Family-led values, hands-on site knowledge, and methodical
-                execution remain at the center of every assignment we take on.
-              </p>
+                <div className="absolute inset-0 bg-gradient-to-t from-[#071324]/82 via-[#071324]/18 to-transparent" />
+                <div className="absolute bottom-5 left-5 right-5 rounded-[24px] border border-white/10 bg-[#071324]/72 p-5 text-white backdrop-blur-md sm:p-6">
+                  <p className="text-xs font-semibold uppercase tracking-[0.26em] text-blue-200">
+                    Foundation legacy
+                  </p>
+                  <p className="mt-3 text-sm leading-7 text-slate-200 sm:text-base">
+                    Milestones, blessings, and team moments that shaped the
+                    journey of Standard Pile Foundation over the years.
+                  </p>
+                </div>
+              </div>
+
+              <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-1">
+                {galleryImages.slice(1).map((image, index) => (
+                  <div
+                    key={image.src}
+                    className="relative overflow-hidden rounded-[22px] border border-white/10 bg-[#0a1a32]"
+                  >
+                    <img
+                      src={image.src}
+                      alt={image.alt}
+                      loading="lazy"
+                      className="h-[154px] w-full object-contain bg-[#dfe8ea] sm:h-[190px] lg:h-[253px]"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#071324]/70 via-transparent to-transparent" />
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
 

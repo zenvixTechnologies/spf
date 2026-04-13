@@ -42,7 +42,7 @@ export default function Hero() {
     },
     {
       image:
-        "https://images.unsplash.com/photo-1513828583688-c52646db42da?auto=format&fit=crop&w=1600&q=80",
+        "/pilling.png",
       title: "Soil Investigation",
       subtitle:
         "Accurate soil testing & analysis for safe and stable construction",

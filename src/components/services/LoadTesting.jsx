@@ -5,12 +5,20 @@ const galleryImages = [
   "/pile-foundation.webp",
   "/Arcadia Hotel.png",
   "/AVS Serene City.png",
+  "/service3.jpeg",
+
   "/Brilliant Study Centre Pala.png",
   "/Chandys County Kottayam.png",
+  "/service2.jpeg",
+
   "/Darsana Academy Nagampadam.avif",
   "/Lake Palace Resort.png",
-  "/family.jpg",
-  "/family1.jpg",
+    "/service1.jpeg",
+  "/service4.jpeg",
+  "/service5.jpeg",
+  "/service6.jpeg",
+  "/service7.jpeg",
+  "/service8.jpeg",
 ];
 
 export default function LoadTesting() {
@@ -32,6 +40,7 @@ export default function LoadTesting() {
                 <img
                   src={image}
                   alt={`project visual ${index + 1}`}
+                  loading="lazy"
                   className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
                 />
               </article>

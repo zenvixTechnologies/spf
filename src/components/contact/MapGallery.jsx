@@ -59,6 +59,7 @@ export default function MapGallery() {
           <div className="relative rounded-xl overflow-hidden group">
             <img
               src="https://lh3.googleusercontent.com/aida-public/AB6AXuBdbM-o3qETKY-Mq3cxh-d12rxdqrJRwjSrmuK_-AdaSk2emOfu82P9bS4Hc6gNga8bhKXffW2eyq7t4pKhlZQu8Pi2g3XQWXmESnNfPbpWuRjkxhxvjVdXQMsvAhWiYWIqI7PToJZ0S-lqfgg0aww6qyxZ_bGbwO9M69-lpET1e9I-br29Ymt61UEhUf6Swx6fIIQgSrh6iQBW8StxC7_lcmxhnQd4xT03kwUjVcP9BLIlcNkOqz4p8VMsZfZ7pY3zuaxkgRV_L_t3"
+              loading="lazy"
               className="w-full h-full object-cover group-hover:scale-110 transition duration-500"
               alt="rig"
             />
@@ -74,6 +75,7 @@ export default function MapGallery() {
           <div className="relative rounded-xl overflow-hidden group">
             <img
               src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxnJJh2L5y5ZBgrmjQkcU8uYyU4ocf4eVM-TJAt_MPvsdmJsBtf9Y2n-1LNowTMkJrLtjqfAJecCOWnxauF-_GgHpRM2PUp6NZqyiAnozCR5HNLEUH_Nas-gQbQZ2QPkOGxHWdpDGOU1JUb3aY54DMc1L6Kna9Fxyp4IeFu2SCHcyaQL1_z5erPrcq09xJOV4AT9tdVYStJkHDJtv4oLbQcRxdy3Nw3ZK8Bcl28O1RuQumua7YP0fxsY2q2nztACJA3M219bkm8QSs"
+              loading="lazy"
               className="w-full h-full object-cover group-hover:scale-110 transition duration-500"
               alt="site"
             />
@@ -89,6 +91,7 @@ export default function MapGallery() {
           <div className="relative rounded-xl overflow-hidden group col-span-2 h-48">
             <img
               src="https://lh3.googleusercontent.com/aida-public/AB6AXuAGbm8WXTbMihqDABoyX2X4IHRt_IwocXAumGjsCBhfG6jlNsZHrLHT5HiQV3tZ3_P00phkT3-nnkA28RdLnrDKEeqB1Pro9o5uD5o4ZRA4RzXOwCzPSxqagqHddbBL9uWKBj43BEuBsFp0f_kyG7ERWpPZWdTZbXVACWpdfrGjrifhwgnXE_Im0NxWWofwBECiQrQaxJcW75UN-vIjc_eMOy65QyLHo5xAeLN5xe355kMMCRFs4CRFmx4AsfLjSr3U4z2_1d_OSAS-"
+              loading="lazy"
               className="w-full h-full object-cover group-hover:scale-110 transition duration-500"
               alt="material"
             />

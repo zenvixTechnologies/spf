@@ -5,9 +5,9 @@ import ProjectsGrid from "@/components/projects/ProjectsGrid";
 import ProjectsHero from "@/components/projects/ProjectsHero";
 
 export const metadata = {
-  title: "Projects",
+  title: "Projects Portfolio",
   description:
-    "View foundation engineering and piling projects completed by Standard Pile Foundation across Kerala, including residential, hospitality, educational, and commercial developments.",
+    "Explore churches under Changanacherry Diocese, other churches, and building projects, each with an individual details page.",
   alternates: {
     canonical: "/projects",
   },
@@ -21,7 +21,7 @@ export default function ProjectsPage() {
       <main className="pt-8 pb-20 overflow-hidden bg-[#f8f9fb]">
         <ProjectsHero />
         <ProjectsGrid />
-        <ProjectsCTA />
+        {/* <ProjectsCTA /> */}
       </main>
 
       <Footer />
