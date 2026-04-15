@@ -85,11 +85,15 @@ export default function Footer() {
           </h4>
 
           <ul className="space-y-3 text-sm text-gray-500">
-            <li className="hover:text-blue-900 cursor-pointer">
-              Privacy Policy
+            <li>
+              <Link href="/privacy-policy" className="hover:text-blue-900">
+                Privacy Policy
+              </Link>
             </li>
-            <li className="hover:text-blue-900 cursor-pointer">
-              Terms of Service
+            <li>
+              <Link href="/terms-of-service" className="hover:text-blue-900">
+                Terms of Service
+              </Link>
             </li>
             <li className="hover:text-blue-900 cursor-pointer">Site Map</li>
           </ul>
@@ -113,11 +117,7 @@ export default function Footer() {
             <span className="material-symbols-outlined text-sm">share</span>
           </div>
 
-          {/* <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center hover:bg-blue-900 hover:text-white transition">
-            <span className="material-symbols-outlined text-sm">
-              social_leaderboard
-            </span>
-          </div> */}
+ 
         </div>
       </div>
     </footer>
