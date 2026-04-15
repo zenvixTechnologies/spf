@@ -18,11 +18,44 @@ export default function ContactInfo() {
     {
       title: "Call Us",
       content: (
-        <>
-          0477 2212963 <br />
-          +91-8281133639 <br />
-          +91-9447597225
-        </>
+        <div className="space-y-3">
+          <div className="flex items-center justify-between gap-3">
+            <span>0477 2212963</span>
+            <a
+              href="tel:04772212963"
+              aria-label="Call 0477 2212963"
+              className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-[#e8f0fe] text-[#0b1f3a] transition hover:bg-[#0b1f3a] hover:text-white"
+            >
+              <span className="material-symbols-outlined text-[18px]">
+                call
+              </span>
+            </a>
+          </div>
+          <div className="flex items-center justify-between gap-3">
+            <span>+91-8281133639</span>
+            <a
+              href="tel:+918281133639"
+              aria-label="Call +91-8281133639"
+              className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-[#e8f0fe] text-[#0b1f3a] transition hover:bg-[#0b1f3a] hover:text-white"
+            >
+              <span className="material-symbols-outlined text-[18px]">
+                call
+              </span>
+            </a>
+          </div>
+          <div className="flex items-center justify-between gap-3">
+            <span>+91-9447597225</span>
+            <a
+              href="tel:+919447597225"
+              aria-label="Call +91-9447597225"
+              className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-[#e8f0fe] text-[#0b1f3a] transition hover:bg-[#0b1f3a] hover:text-white"
+            >
+              <span className="material-symbols-outlined text-[18px]">
+                call
+              </span>
+            </a>
+          </div>
+        </div>
       ),
       icon: "call",
     },
@@ -81,9 +114,9 @@ export default function ContactInfo() {
           </div>
 
           {/* Content */}
-          <p className="text-[14px] text-[#6b7280] leading-relaxed">
+          <div className="text-[14px] text-[#6b7280] leading-relaxed">
             {item.content}
-          </p>
+          </div>
         </motion.div>
       ))}
     </motion.div>
