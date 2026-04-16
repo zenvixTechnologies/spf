@@ -3,19 +3,26 @@ import AppLoader from "@/components/AppLoader";
 
 const siteUrl = "https://standardpilefoundation.com";
 const siteName = "Standard Pile Foundation";
+const siteTitle =
+  "Standard Pile Foundation | Pile Foundation and Soil Investigation in Kerala";
 const siteDescription =
   "Standard Pile Foundation is a Kerala-based geotechnical engineering company offering soil investigation, pile foundation construction, load testing, and deep foundation solutions for residential, commercial, and institutional projects since 1987.";
+const siteImage = `${siteUrl}/spf.png`;
 
 export const metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: siteName,
+    default: siteTitle,
     template: `%s | ${siteName}`,
   },
   description: siteDescription,
   applicationName: siteName,
   keywords: [
     "Standard Pile Foundation",
+    "standard pile foundation",
+    "Standard Pile Foundation Kerala",
+    "Standard Pile Foundation Edathua",
+    "Standard Pile Foundation Alappuzha",
     "standardpilefoundation.com",
     "pile foundation Kerala",
     "soil investigation Kerala",
@@ -38,14 +45,23 @@ export const metadata = {
     type: "website",
     url: siteUrl,
     siteName,
-    title: siteName,
+    title: siteTitle,
     description: siteDescription,
     locale: "en_IN",
+    images: [
+      {
+        url: siteImage,
+        width: 1200,
+        height: 630,
+        alt: siteName,
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
-    title: siteName,
+    title: siteTitle,
     description: siteDescription,
+    images: [siteImage],
   },
   robots: {
     index: true,
@@ -66,12 +82,14 @@ export default function RootLayout({ children }) {
     "@context": "https://schema.org",
     "@type": ["LocalBusiness", "ProfessionalService", "Organization"],
     name: siteName,
+    alternateName: ["Standard Pile Foundation Kerala", "SPF Kerala"],
     url: siteUrl,
     description: siteDescription,
+    logo: siteImage,
     email: ["standardpile87@gmail.com", "rajupunnapra@yahoo.com"],
     telephone: ["+91-477-2212963", "+91-8281133639", "+91-9447597225"],
     foundingDate: "1987",
-    image: `${siteUrl}/spf.png`,
+    image: siteImage,
     address: {
       "@type": "PostalAddress",
       streetAddress: "2nd Floor, St. George Shopping Complex, Edathua",
@@ -106,6 +124,16 @@ export default function RootLayout({ children }) {
       "Granular piles",
       "Sand piles",
     ],
+    contactPoint: [
+      {
+        "@type": "ContactPoint",
+        contactType: "customer service",
+        telephone: "+91-8281133639",
+        email: "standardpile87@gmail.com",
+        areaServed: "IN",
+        availableLanguage: ["en", "ml"],
+      },
+    ],
     sameAs: ["https://www.google.com/maps?q=Standard+Pile+Foundation"],
   };
 
@@ -123,7 +151,23 @@ export default function RootLayout({ children }) {
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify(organizationSchema),
+            __html: JSON.stringify([
+              organizationSchema,
+              {
+                "@context": "https://schema.org",
+                "@type": "WebSite",
+                name: siteName,
+                alternateName: "Standard Pile Foundation Kerala",
+                url: siteUrl,
+                description: siteDescription,
+                publisher: {
+                  "@type": "Organization",
+                  name: siteName,
+                  url: siteUrl,
+                  logo: siteImage,
+                },
+              },
+            ]),
           }}
         />
       </head>

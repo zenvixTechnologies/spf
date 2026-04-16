@@ -8,11 +8,31 @@ import Services from "@/components/home/Services";
 import WhyChoose from "@/components/home/WhyChoose";
 
 export const metadata = {
-  title: "Pile Foundation and Soil Investigation in Kerala",
+  title: "Standard Pile Foundation | Pile Foundation and Soil Investigation in Kerala",
   description:
-    "Standard Pile Foundation delivers soil investigation, pile foundation works, deep foundation systems, and load testing across Kerala for residential, commercial, and institutional projects.",
+    "Standard Pile Foundation delivers soil investigation, pile foundation works, deep foundation systems, and load testing across Kerala from Edathua, Alappuzha for residential, commercial, and institutional projects.",
+  keywords: [
+    "Standard Pile Foundation",
+    "standard pile foundation",
+    "standard pile foundation kerala",
+    "standard pile foundation alappuzha",
+    "pile foundation and soil investigation in Kerala",
+  ],
   alternates: {
     canonical: "/",
+  },
+  openGraph: {
+    title:
+      "Standard Pile Foundation | Pile Foundation and Soil Investigation in Kerala",
+    description:
+      "Standard Pile Foundation delivers soil investigation, pile foundation works, deep foundation systems, and load testing across Kerala from Edathua, Alappuzha.",
+    url: "/",
+  },
+  twitter: {
+    title:
+      "Standard Pile Foundation | Pile Foundation and Soil Investigation in Kerala",
+    description:
+      "Standard Pile Foundation delivers soil investigation, pile foundation works, deep foundation systems, and load testing across Kerala from Edathua, Alappuzha.",
   },
 };
 
