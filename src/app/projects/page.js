@@ -1,6 +1,6 @@
 import Footer from "@/components/home/Footer";
 import Navbar from "@/components/home/Navbar";
-import ProjectsGrid from "@/components/projects/ProjectsGrid";
+import ProjectsSections from "@/components/lazy/ProjectsSections";
 import ProjectsHero from "@/components/projects/ProjectsHero";
 
 export const metadata = {
@@ -19,7 +19,7 @@ export default function ProjectsPage() {
 
       <main className="pt-8 pb-20 overflow-hidden bg-[#f8f9fb]">
         <ProjectsHero />
-        <ProjectsGrid />
+        <ProjectsSections />
         {/* <ProjectsCTA /> */}
       </main>
 

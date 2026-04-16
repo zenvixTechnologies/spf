@@ -1,7 +1,9 @@
 "use client";
 
+import dynamic from "next/dynamic";
 import { useEffect, useState } from "react";
-import Loader from "./Loader";
+
+const Loader = dynamic(() => import("./Loader"));
 
 export default function AppLoader({ children }) {
   const [done, setDone] = useState(true);

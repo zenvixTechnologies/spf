@@ -57,10 +57,10 @@ export default function About() {
             },
             {
               title: "Soil Investigation",
-              img: "/soil-investigation.jpg",
+              img: "/soil.jpeg",
             },
             {
-              title: "Load Testing",
+              title: "Pile Load Testing",
               img: "/loadtest.png",
             },
           ].map((item, i) => (
