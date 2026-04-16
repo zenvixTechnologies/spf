@@ -18,7 +18,7 @@ const badges = [
 
 const galleryImages = [
   {
-    src: "/about1.jpeg",
+    src: "/about3.jpeg",
     alt: "Ceremonial inauguration at Standard Pile Foundation office",
   },
   {
@@ -26,7 +26,7 @@ const galleryImages = [
     alt: "Lamp lighting ceremony during a company gathering",
   },
   {
-    src: "/about3.jpeg",
+    src: "/about1.jpeg",
     alt: "Blessing ceremony with the Standard Pile Foundation team",
   },
 ];
@@ -116,7 +116,7 @@ export default function AboutHero() {
             <div className="grid gap-3 lg:grid-cols-[1.08fr_0.92fr]">
               <div className="relative overflow-hidden rounded-[24px]">
                 <img
-                  src="/about1.jpeg"
+                  src="/about3.jpeg"
                   alt="Ceremonial inauguration at Standard Pile Foundation office"
                   loading="lazy"
                   className="h-[320px] w-full object-contain bg-[#dfe8ea] sm:h-[420px] lg:h-[520px]"

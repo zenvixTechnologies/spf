@@ -16,7 +16,7 @@ const services = [
     description:
       "Detailed sub-soil testing and reporting to support safer structural decisions.",
     image:
-      "/soil-investigation.jpg",
+      "/soil.jpeg",
     icon: FlaskConical,
   },
   {
@@ -28,7 +28,7 @@ const services = [
     icon: Drill,
   },
   {
-    title: "Load & Integrity Testing",
+    title: "Pile Load & Integrity Testing",
     description:
       "Verification services focused on strength, stability, and long-term foundation reliability.",
     image:

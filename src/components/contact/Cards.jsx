@@ -55,6 +55,18 @@ export default function ContactInfo() {
               </span>
             </a>
           </div>
+          <div className="flex items-center justify-between gap-3">
+            <span>+91-9447402898</span>
+            <a
+              href="tel:+919447402898"
+              aria-label="Call +91-9447402898"
+              className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-[#e8f0fe] text-[#0b1f3a] transition hover:bg-[#0b1f3a] hover:text-white"
+            >
+              <span className="material-symbols-outlined text-[18px]">
+                call
+              </span>
+            </a>
+          </div>
         </div>
       ),
       icon: "call",

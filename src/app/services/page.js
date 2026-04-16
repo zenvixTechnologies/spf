@@ -1,10 +1,7 @@
 import Footer from "@/components/home/Footer";
 import Navbar from "@/components/home/Navbar";
-import CTA from "@/components/services/CTA";
-import FoundationGrid from "@/components/services/FoundationGrid";
-import LoadTesting from "@/components/services/LoadTesting";
+import ServicesSections from "@/components/lazy/ServicesSections";
 import ServicesHero from "@/components/services/ServicesHero";
-import SoilSection from "@/components/services/SoilSection";
 
 export const metadata = {
   title: "Services",
@@ -21,10 +18,7 @@ export default function ServicesPage() {
       <Navbar />
       <main className="">
         <ServicesHero />
-        <SoilSection />
-        <FoundationGrid />
-        <LoadTesting />
-        <CTA />
+        <ServicesSections />
       </main>
       <Footer />
     </>
