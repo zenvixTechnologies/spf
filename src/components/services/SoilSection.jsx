@@ -6,7 +6,7 @@ import { CircleGauge, Drill, FlaskConical } from "lucide-react";
 const detailedServices = [
   {
     title: "Soil Investigation",
-    image: "/soil-investigation.jpg",
+    image: "/soil.jpeg",
     icon: FlaskConical,
     summary:
       "Detailed sub-soil exploration that gives engineers and clients a clearer picture of the ground before structural decisions are finalized.",
@@ -29,7 +29,7 @@ const detailedServices = [
     ],
   },
   {
-    title: "Load & Integrity Testing",
+    title: "Pile Load & Integrity Testing",
     image: "/loadtest.png",
     icon: CircleGauge,
     summary:
