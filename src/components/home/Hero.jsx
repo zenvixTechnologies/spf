@@ -79,6 +79,10 @@ export default function Hero() {
 
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden">
+      <h1 className="sr-only">
+        Standard Pile Foundation - Pile Foundation and Soil Investigation in
+        Kerala
+      </h1>
 
       {/* BACKGROUND */}
       <AnimatePresence mode="wait">

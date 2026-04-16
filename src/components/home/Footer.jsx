@@ -155,7 +155,7 @@ export default function Footer() {
                 Terms of Service
               </Link>
             </li>
-            <li className="hover:text-blue-900 cursor-pointer">Site Map</li>
+            {/* <li className="hover:text-blue-900 cursor-pointer">Site Map</li> */}
           </ul>
         </div>
       </div>
