@@ -16,56 +16,89 @@ export default function ContactInfo() {
       icon: "location_on",
     },
     {
-      title: "Call Us",
+      title: "Office Contact",
       content: (
-        <div className="space-y-3">
-          <div className="flex items-center justify-between gap-3">
-            <span>0477 2212963</span>
-            <a
-              href="tel:04772212963"
-              aria-label="Call 0477 2212963"
-              className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-[#e8f0fe] text-[#0b1f3a] transition hover:bg-[#0b1f3a] hover:text-white"
-            >
-              <span className="material-symbols-outlined text-[18px]">
-                call
+        <div className="space-y-5">
+          <div className="rounded-xl bg-[#f8f9fb] p-4">
+            <p className="text-[12px] font-semibold uppercase tracking-[0.18em] text-[#0b1f3a]">
+              Office
+            </p>
+            <div className="mt-3 flex items-center justify-between gap-3">
+              <span className="font-medium text-[#374151]">
+                Phone: 0477 2212963
               </span>
-            </a>
+              <a
+                href="tel:04772212963"
+                aria-label="Call office at 0477 2212963"
+                className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-[#e8f0fe] text-[#0b1f3a] transition hover:bg-[#0b1f3a] hover:text-white"
+              >
+                <span className="material-symbols-outlined text-[18px]">
+                  call
+                </span>
+              </a>
+            </div>
           </div>
-          <div className="flex items-center justify-between gap-3">
-            <span>+91-8281133639</span>
-            <a
-              href="tel:+918281133639"
-              aria-label="Call +91-8281133639"
-              className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-[#e8f0fe] text-[#0b1f3a] transition hover:bg-[#0b1f3a] hover:text-white"
-            >
-              <span className="material-symbols-outlined text-[18px]">
-                call
-              </span>
-            </a>
+
+          <div className="rounded-xl bg-[#f8f9fb] p-4">
+            <p className="text-[16px] font-semibold text-[#0b1f3a]">
+              Chacko Scaria
+            </p>
+            <p className="mt-1 text-[13px] font-medium text-[#4a78c2]">
+              Managing Partner
+            </p>
+            <div className="mt-3 space-y-3">
+              <div className="flex items-center justify-between gap-3">
+                <span className="font-medium text-[#374151]">
+                  Phone: +91-8281133639
+                </span>
+                <a
+                  href="tel:+918281133639"
+                  aria-label="Call Chacko Scaria at +91-8281133639"
+                  className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-[#e8f0fe] text-[#0b1f3a] transition hover:bg-[#0b1f3a] hover:text-white"
+                >
+                  <span className="material-symbols-outlined text-[18px]">
+                    call
+                  </span>
+                </a>
+              </div>
+              <div className="flex items-center justify-between gap-3">
+                <span className="font-medium text-[#374151]">
+                  Phone: +91-9447402898
+                </span>
+                <a
+                  href="tel:+919447402898"
+                  aria-label="Call Chacko Scaria at +91-9447402898"
+                  className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-[#e8f0fe] text-[#0b1f3a] transition hover:bg-[#0b1f3a] hover:text-white"
+                >
+                  <span className="material-symbols-outlined text-[18px]">
+                    call
+                  </span>
+                </a>
+              </div>
+            </div>
           </div>
-          <div className="flex items-center justify-between gap-3">
-            <span>+91-9447597225</span>
-            <a
-              href="tel:+919447597225"
-              aria-label="Call +91-9447597225"
-              className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-[#e8f0fe] text-[#0b1f3a] transition hover:bg-[#0b1f3a] hover:text-white"
-            >
-              <span className="material-symbols-outlined text-[18px]">
-                call
+
+          <div className="rounded-xl bg-[#f8f9fb] p-4">
+            <p className="text-[16px] font-semibold text-[#0b1f3a]">
+              John K A
+            </p>
+            <p className="mt-1 text-[13px] font-medium text-[#4a78c2]">
+              Partner
+            </p>
+            <div className="mt-3 flex items-center justify-between gap-3">
+              <span className="font-medium text-[#374151]">
+                Phone: +91-9447597225
               </span>
-            </a>
-          </div>
-          <div className="flex items-center justify-between gap-3">
-            <span>+91-9447402898</span>
-            <a
-              href="tel:+919447402898"
-              aria-label="Call +91-9447402898"
-              className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-[#e8f0fe] text-[#0b1f3a] transition hover:bg-[#0b1f3a] hover:text-white"
-            >
-              <span className="material-symbols-outlined text-[18px]">
-                call
-              </span>
-            </a>
+              <a
+                href="tel:+919447597225"
+                aria-label="Call John K A at +91-9447597225"
+                className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-[#e8f0fe] text-[#0b1f3a] transition hover:bg-[#0b1f3a] hover:text-white"
+              >
+                <span className="material-symbols-outlined text-[18px]">
+                  call
+                </span>
+              </a>
+            </div>
           </div>
         </div>
       ),
