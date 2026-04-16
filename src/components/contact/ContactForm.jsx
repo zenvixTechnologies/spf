@@ -94,23 +94,17 @@ export default function ContactForm() {
           </div>
 
           {/* Service */}
-          <div className="space-y-2 relative">
+          <div className="space-y-2">
             <label className="text-[10px] font-semibold uppercase text-[#6b7280]">
               Service Required
             </label>
 
-            <select
+            <input
+              type="text"
               name="service"
-              className="w-full bg-[#e5e7eb] focus:bg-white p-3 md:p-4 rounded-lg appearance-none outline-none"
-            >
-              <option>DMC Piling</option>
-              <option>Rotary Piling</option>
-              <option>Micro Piling</option>
-            </select>
-
-            <span className="absolute right-4 top-[38px] text-gray-500 pointer-events-none">
-              ▼
-            </span>
+              placeholder="Enter required service"
+              className="w-full bg-[#e5e7eb] focus:bg-white p-3 md:p-4 rounded-lg outline-none transition"
+            />
           </div>
 
           {/* Message */}

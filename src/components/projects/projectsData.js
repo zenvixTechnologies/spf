@@ -172,6 +172,18 @@ export const projectSections = [
         description:
           "Knanaya Catholic church in Chungam added to the Other Churches section.",
       },
+      {
+        slug: "st-marys-malankara-catholic-church",
+        title: "St. Mary's Malankara Syrian Catholic Church Niranam-Alumthuruthy",
+        location: "Kadapra",
+        category: "Church",
+        section: "Other Churches",
+        image:
+          "/123456.webp",
+     
+        description:
+          "St Mary's Malankara Catholic Church in Alumthuruthy,Pathanamthitta listed under Churches in Pathanamthitta.",
+      },
     ],
   },
   {
