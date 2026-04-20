@@ -13,7 +13,7 @@ export const projectSections = [
         category: "Church",
         section: "Churches Under Changanacherry Diocese",
         image:
-          "https://scontent.fcok14-1.fna.fbcdn.net/v/t39.30808-6/486637958_986339120353751_16261331131727007_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=2a1932&_nc_ohc=MEkLNM2GHxYQ7kNvwGOY0YS&_nc_oc=AdqcJisnm6x3H77WvRpzAdcC1Xks3WumZE78TucKATQNDPP2w8N3a3yf1T2LosUCJ0HeFc7ixbXmcs-6D9mvQJvE&_nc_zt=23&_nc_ht=scontent.fcok14-1.fna&_nc_gid=4SsyRGHx_D1vlpasvswBhA&_nc_ss=7a389&oh=00_Af0L0tHAWHcXm9N4CPbsGFvKDDP5rAlxCkqNea1c76g-Zw&oe=69E17974",
+          "/St. Joseph Church.jpg",
         href:
           "https://scontent.fcok14-1.fna.fbcdn.net/v/t39.30808-6/486637958_986339120353751_16261331131727007_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=2a1932&_nc_ohc=MEkLNM2GHxYQ7kNvwGOY0YS&_nc_oc=AdqcJisnm6x3H77WvRpzAdcC1Xks3WumZE78TucKATQNDPP2w8N3a3yf1T2LosUCJ0HeFc7ixbXmcs-6D9mvQJvE&_nc_zt=23&_nc_ht=scontent.fcok14-1.fna&_nc_gid=4SsyRGHx_D1vlpasvswBhA&_nc_ss=7a389&oh=00_Af0L0tHAWHcXm9N4CPbsGFvKDDP5rAlxCkqNea1c76g-Zw&oe=69E17974",
         description:
@@ -38,7 +38,7 @@ export const projectSections = [
         category: "Church",
         section: "Churches Under Changanacherry Diocese",
         image:
-          "https://upload.wikimedia.org/wikipedia/commons/8/8e/St_josephs_church_chennamkary.jpg",
+          "/St. Joseph's Church.jpg",
         href:
           "https://upload.wikimedia.org/wikipedia/commons/8/8e/St_josephs_church_chennamkary.jpg",
         description:
@@ -97,7 +97,7 @@ export const projectSections = [
         category: "Church",
         section: "Churches Under Changanacherry Diocese",
         image:
-          "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGfyhWljtAcNloobVSVnVfYhn9YvaAww4PogWy9GR791VNHgd-h8AkBFza6WO7J-32LDkRt-UpOvvIkCYKaAEsY37XZvnbh38mqDnw5jI-TnJgg5uhemFXpK4pVbzYn-TmiCxHtYNRIJqs8=s1360-w1360-h1020-rw",
+          "/St. Paul's Church.png",
         href:
           "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGfyhWljtAcNloobVSVnVfYhn9YvaAww4PogWy9GR791VNHgd-h8AkBFza6WO7J-32LDkRt-UpOvvIkCYKaAEsY37XZvnbh38mqDnw5jI-TnJgg5uhemFXpK4pVbzYn-TmiCxHtYNRIJqs8=s1360-w1360-h1020-rw",
         description:
@@ -111,7 +111,7 @@ export const projectSections = [
         category: "Church",
         section: "Churches Under Changanacherry Diocese",
         image:
-          "https://lh3.googleusercontent.com/gps-cs-s/AHVAweqA1Avu4L3pXVW8ZQ64M4E5LvPHdL_hRvpHFXpi_-MCjAKl-QWCXMi4cpBkUE_q1B9Rxu3zah7MgdapY3AVBaytdTp-kY9WPFO1PIf4akbEAqNf8yBj9Tzef4UasIA69AP4OWqYsg=s1360-w1360-h1020-rw",
+          "/Marth Mariam Forane Church.jpg",
         href:
           "https://lh3.googleusercontent.com/gps-cs-s/AHVAweqA1Avu4L3pXVW8ZQ64M4E5LvPHdL_hRvpHFXpi_-MCjAKl-QWCXMi4cpBkUE_q1B9Rxu3zah7MgdapY3AVBaytdTp-kY9WPFO1PIf4akbEAqNf8yBj9Tzef4UasIA69AP4OWqYsg=s1360-w1360-h1020-rw",
         description:
@@ -131,7 +131,7 @@ export const projectSections = [
         location: "Chengannur",
         category: "Church",
         section: "Other Churches",
-        image: "https://photos.wikimapia.org/p/00/02/06/39/33_big.jpg",
+        image: "/Bethel Mar Gregorios Aramana Church.jpg",
         href: "https://photos.wikimapia.org/p/00/02/06/39/33_big.jpg",
         description:
           "Additional church entry from Chengannur included in the wider projects collection.",
@@ -153,7 +153,7 @@ export const projectSections = [
         category: "Church",
         section: "Other Churches",
         image:
-          "https://lh3.googleusercontent.com/gps-cs-s/AHVAweq0c7wpdjHV0RMXkQFhhDjlG6nQlJLF0DBJhvWgEp0Mjo5fVBQ_PM21f6G0Ylozv3Dd3Ci7JAYDWkIOL5orxWzng3XX4h0IRnAZP3Hb6UbVqU9grvLoyHj7T-9ecHTG_0az9JREwQ=s1360-w1360-h1020-rw",
+          "/St. Mary's Orthodox Church.png",
         href:
           "https://lh3.googleusercontent.com/gps-cs-s/AHVAweq0c7wpdjHV0RMXkQFhhDjlG6nQlJLF0DBJhvWgEp0Mjo5fVBQ_PM21f6G0Ylozv3Dd3Ci7JAYDWkIOL5orxWzng3XX4h0IRnAZP3Hb6UbVqU9grvLoyHj7T-9ecHTG_0az9JREwQ=s1360-w1360-h1020-rw",
         description:
@@ -166,7 +166,7 @@ export const projectSections = [
         category: "Church",
         section: "Other Churches",
         image:
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/St._Thomas_Knanaya_Catholic_Church%2C_Chungam.jpg/960px-St._Thomas_Knanaya_Catholic_Church%2C_Chungam.jpg?_=20230914170611",
+          "/St. Thomas Knanaya Catholic Church.jpg",
         href:
           "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/St._Thomas_Knanaya_Catholic_Church%2C_Chungam.jpg/960px-St._Thomas_Knanaya_Catholic_Church%2C_Chungam.jpg?_=20230914170611",
         description:
@@ -209,7 +209,7 @@ export const projectSections = [
         category: "Building",
         section: "Buildings",
         image:
-          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT08Gn3Y73zBCHCf_FHuASP1uja3h_Twpj5MA&s",
+          "/Hotel Crystal Palace.jpg",
         href:
           "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT08Gn3Y73zBCHCf_FHuASP1uja3h_Twpj5MA&s",
         description:
